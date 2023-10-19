@@ -1,107 +1,36 @@
-import { Link } from "react-scroll";
+import React from "react";
+import { Link,NavLink } from "react-router-dom";
+import LogoS from  "./images/logo1.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleInfo, faEnvelope, faHome, faToolbox, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
+// import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-function Navbar() {
-  document.addEventListener("scroll", function (e) {
-    if (window.screen.width < 768 && window.scrollY > 690) {
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.add("display");
-
-      const nav = document.querySelector(".navbar");
-
-      nav.classList.add("navopened");
-    } else if (window.screen.width > 768 && window.scrollY > 220) {
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.add("display");
-
-      const nav = document.querySelector(".navbar");
-
-      nav.classList.add("navopened");
-    } else {
-      const nav = document.querySelector(".navbar");
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.remove("display");
-      nav.classList.remove("navopened");
-    }
-  });
-  function openBar() {
-    const bar = document.querySelector(".bar");
-
-    bar.classList.toggle("opened");
-  }
-
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="row">
-          <h1 className="logo">
-            <Link
-              spy={true}
-              smooth={true}
-              duration={1000}
-              to="headerbg"
-              style={{ cursor: "pointer",color:"#afff00" }}
-            >
-             <b> &gt;&#95;TechChor</b>
-            </Link>
-          </h1>
-          <ul className="bar">
-            <li>
-              <Link
-                onClick={openBar}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                to="headerbg"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={openBar}
-                activeClass="active"
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={openBar}
-                to="about-scroll"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={openBar}
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className="button" onClick={openBar}>
-            <div className="burger"></div>
-            <div className="burger"></div>
-            <div className="burger"></div>
-          </div>
-        </div>
-      </div>
+    <div className="nav-bar">
+      <Link to="/">
+      <img className="logo" src={LogoS} alt="" />
+      
+      <nav>
+        <NavLink exact='true' activeclassname="active" className='home-link' to='/'>
+            <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
+        </NavLink>
+        
+        <NavLink exact='true' activeclassname="active" className='services-link' to='/services'>
+            <FontAwesomeIcon icon={faToolbox} color='#4d4d4e'/>
+        </NavLink>
+
+        <NavLink exact='true' activeclassname="active" className='about-link' to='/about'>
+            <FontAwesomeIcon icon={faCircleInfo} color='#4d4d4e'/>
+        </NavLink>
+
+        <NavLink exact='true' activeclassname="active" className="contact-link" to='/contact'>
+            <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
+        </NavLink>
     </nav>
+    </Link>
+    </div>
   );
-}
+};
+
 export default Navbar;
