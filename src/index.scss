@@ -33,6 +33,30 @@ body{
   
 }
 
+.parent{
+  // border: 3px solid #fff;
+  padding: 20px;
+
+  .child{
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    // border: 2px solid red;
+  }
+  .child1{
+    z-index: -1;
+    left: 25%;
+    height: 100%;
+    align-items: center;
+    // float: left;
+    // width: 100%;
+    
+  }
+}
+
+
 
 
 .logo{
