@@ -1,26 +1,39 @@
-// body{
-//   background-color: #000000;
-//   color: #afff00;
-// }
-// .nav-bar{
-//   background:#1a1a1a; 
-//   width: 100%;
-//   height: 50px;
-//   position: absolute;
-//   top: 0;
-//   z-index:3;
+body{
+  background-color: #000000;
+  color: #afff00;
+}
+.row{
+  padding-left: 200px;
+  .col{
+    width: 500px;
+    .card{
+      .card-body{
+         
+          // background-color: #f0f0f0;
+          // border: 1px solid #ccc;
+          // border-radius: 5px;
+          // overflow: hidden;
+          // position: relative;
 
-//   .logo{
-//       display: block ;
-//       width: 150px;
-//   }
+
+        &:hover{
+          display: block;
+          top: -30px;
+          background-color: #afff00;
+          color:#1a1a1a;
+          border-radius: 7px;
+          transform: scale(1.05);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+      }
+    }
+  }
+ 
+  
+}
 
 
-
-// .home-link{
-//   width: 80px;
-// }
-// }
 
 .logo{
   display: block ;
@@ -36,6 +49,14 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 10px;
+
+.nav-links{
+  .home-link{
+  &:hover{
+    color: #afff00;
+  }}
+
+}
 }
 
 .nav-links {
@@ -53,7 +74,7 @@ align-items: center;
 body {
 // background-image: linear-gradient(to right, #ffffff, #6495ED);
 background-color: #000000;
-font-family: 'Comic Sans MS', sans-serif;
+font-family: 'Share Tech Mono';
 color: #afff00;
 } 
 
@@ -135,4 +156,5 @@ opacity: 0.5;
 opacity: 1;
 }
 }
+/* Loader styles */
 
