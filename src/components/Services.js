@@ -6,52 +6,10 @@ const Services = () => {
     <>
       <Navbar />
       <div>
-        {/* <div> */}
-        <h1 style={{ textAlign: "center", paddingTop: "30px" }}>
+        
+        <h1 style={{ textAlign: "center", paddingTop: "80px",fontSize:'60px' }}>
           <b>What we offer</b>
         </h1>
-        {/* <h3 style={{textAlign:'center', paddingTop: "30px"}}><b>Project Collaboration</b></h3>
-    <p
-            style={{
-              fontSize: "22px",
-              paddingLeft: "40px",
-              paddingTop: "20px",
-              color:'white'
-            
-            }}
-          > 
-       </p>
-
-    <h3 style={{textAlign:'center', paddingTop: "30px"}}><b>Workshops and Webinars</b></h3>
-    <p
-            style={{
-              fontSize: "22px",
-              paddingLeft: "40px",
-              paddingTop: "20px",
-              color:'white'
-            }}
-          ></p>
-    </div>
-
-    <h3 style={{textAlign:'center', paddingTop: "30px"}}><b>Hackathons and Competitions</b></h3>
-    <p
-            style={{
-              fontSize: "22px",
-              paddingLeft: "40px",
-              paddingTop: "20px",color:'white'
-            }}
-          > 
-</p>
-
-<h3 style={{textAlign:'center', paddingTop: "30px"}}><b>Community Forum</b></h3>
-<p
-            style={{
-              fontSize: "22px",
-              paddingLeft: "40px",
-              paddingTop: "20px",color:'white'
-            }}
-          > 
-</p> */}
       </div>
       <div className="row row-cols-2 row-cols-sm-1 row-cols-md-2 g-4 m-5">
         <div className="col ">
