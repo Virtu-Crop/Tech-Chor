@@ -1,9 +1,9 @@
 import './index.scss'
-import Home from "./components/Home";
+import Home from "./Pages/Home";
 import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Services from "./components/Services";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Services from "./Pages/Services";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 import Loader from 'react-loaders';
 import { useEffect, useState } from 'react';
 

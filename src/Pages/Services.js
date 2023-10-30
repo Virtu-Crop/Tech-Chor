@@ -1,19 +1,37 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useEffect, useRef } from "react";
+import Navbar from "../components/Navbar";
+import Dots from 'vanta/src/vanta.dots'
 
 const Services = () => {
+  const vantaRef =useRef(null);
+  useEffect(()=>{
+    const vantaEffect = Dots({
+      el: vantaRef.current,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 1000.00,
+      backgroundColor:0x000000,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x4b9845,
+      showLines: false})
+      return () => {
+        // Clean up the effect when the component unmounts
+        vantaEffect.destroy();
+      };},[])
   return (
     <>
       <Navbar />
-      <div>
-        
-        <h1 style={{ textAlign: "center", paddingTop: "80px",fontSize:'60px' }}>
-          <b>What we offer</b>
+      <div className="services-page"  ref={vantaRef}>
+        <h1 style={{ textAlign: "center", paddingTop: "150px",fontSize:'70px',color:'#afff00' }}>
+          <b>What We Offer</b>
         </h1>
       </div>
       <div className="row row-cols-2 row-cols-sm-1 row-cols-md-2 g-4 m-5">
         <div className="col ">
-          <div className="card ">
+          <div className="card bg-transparent text-dark">
             <div className="card-body">
               <b>
                 <h3>
@@ -31,7 +49,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col ">
-          <div className="card ">
+          <div className="card bg-transparent text-dark ">
             <div className="card-body">
               <b>
                 <h3>
@@ -49,7 +67,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col">
-          <div className="card">
+          <div className="card bg-transparent text-dark">
             <div className="card-body ">
               <b>
                 <h3>
@@ -69,7 +87,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col">
-          <div className="card">
+          <div className="card bg-transparent text-dark">
             <div className="card-body">
               <b>
                 <h3>
@@ -87,7 +105,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col">
-          <div className="card">
+          <div className="card bg-transparent text-dark">
             <div className="card-body">
               <b>
                 <h3>
@@ -105,7 +123,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col ">
-          <div className="card ">
+          <div className="card bg-transparent text-dark">
             <div className="card-body">
               <b>
                 <h3>
@@ -122,6 +140,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+       
       </div>
     </>
   );
