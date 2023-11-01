@@ -1,0 +1,39 @@
+.services-page {
+  position: absolute;
+  width: 100%;
+  background-color: #000000;
+
+  h1 {
+    text-align: center;
+    padding-top: 95px;
+    font-size: 70px;
+    color: #afff00;
+  }
+
+  .row {
+    padding-left: 200px;
+    .col {
+      width: 500px;
+
+      .card-body {
+        background-color: #19181800;
+        border-style: none;
+        height: 225px;
+        border-radius: 0%;
+        color: #ffffff;
+
+        &:hover {
+          display: block;
+          opacity: 1;
+          top: -30px;
+          background-color: #95c926;
+          color: #1a1a1a;
+          border-radius: 7px;
+          transform: scale(1.05);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+      }
+    }
+  }
+}

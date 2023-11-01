@@ -1,0 +1,55 @@
+.nav-bar {
+    background-color:#1a1a1a; 
+    border-radius: 10cap;
+    margin-top: 1%;
+    margin-left: 6cap;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+
+    .logo{
+      display: block ;
+      width: 150px;
+      color: #fff;
+    }    
+    
+    .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 160px;
+    
+    .home-icon{
+      &:hover{
+        color: #afff00;
+      }}
+      .services-icon{
+        &:hover{
+          color: #afff00;
+        }}
+        .about-icon{
+          &:hover{
+            color: #afff00;
+          }}
+          .contact-icon{
+            &:hover{
+              color: #afff00;
+            }}
+    
+            a.active{
+              svg{
+                  color:#afff00;
+              }
+          }
+    }}
+    .auth-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    }
+

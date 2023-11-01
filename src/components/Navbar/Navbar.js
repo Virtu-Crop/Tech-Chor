@@ -1,6 +1,7 @@
 import React,{useState} from "react";
+import './Navbar.scss'
 import { Link, NavLink } from "react-router-dom";
-import LogoS from "./images/logo1.png";
+import LogoS from "./../images/logo1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleInfo,

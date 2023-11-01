@@ -1,11 +1,12 @@
-import './index.scss'
-import Home from "./Pages/Home";
-import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Services from "./Pages/Services";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Loader from 'react-loaders';
-import { useEffect, useState } from 'react';
+import "./App.scss";
+import Home from "./Pages/Home/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Services from "./Pages/Services/Services";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+import { useEffect, useState } from "react";
+import Login from "./Pages/Login/Login";
+import Signup from "./Pages/Signup/Signup";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,23 +17,19 @@ function App() {
       setLoading(false);
     }, 2000);
   }, []);
-  
+
   return (
     <>
-  {loading ? (
-        <Loader />
-      ) : (
-        // Render your main content here when loading is false
-        <Router>
-    <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="/services" element={<Services/>}></Route>
-      <Route path="/about" element={<About/>}></Route>
-      <Route path="/contact" element={<Contact/>}></Route>
-    </Routes>
-    </Router>
-      )}
-    
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<Signup/>}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }

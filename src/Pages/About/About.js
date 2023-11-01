@@ -1,6 +1,7 @@
 import React, { useRef,useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Dots from 'vanta/src/vanta.dots'
+import Navbar from '../../components/Navbar/Navbar';
+import Dots from 'vanta/src/vanta.dots';
+import './About.scss'
 const About = () => {
   const vantaRef = useRef(null);
   useEffect(() => {
@@ -26,6 +27,7 @@ const About = () => {
   
   return (
     <>
+    
     <Navbar/>
     <div ref={vantaRef}>
     <div style={{paddingTop:'30px'}}  >

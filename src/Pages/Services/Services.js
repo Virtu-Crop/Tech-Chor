@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
-import Dots from 'vanta/src/vanta.dots'
-
+import Navbar from "../../components/Navbar/Navbar";
+import Dots from 'vanta/src/vanta.dots';
+import './Services.scss'
 const Services = () => {
   const vantaRef =useRef(null);
   useEffect(()=>{
@@ -10,7 +10,7 @@ const Services = () => {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 1000.00,
+      minHeight: 1000,
       backgroundColor:0x000000,
       minWidth: 200.00,
       scale: 1.00,
@@ -24,11 +24,11 @@ const Services = () => {
   return (
     <>
       <Navbar />
-      <div className="services-page"  ref={vantaRef}>
-        <h1 style={{ textAlign: "center", paddingTop: "150px",fontSize:'70px',color:'#afff00' }}>
+      <div className="services-page" ref={vantaRef}  >
+        <h1 >
           <b>What We Offer</b>
         </h1>
-      </div>
+      
       <div className="row row-cols-2 row-cols-sm-1 row-cols-md-2 g-4 m-5">
         <div className="col ">
           <div className="card bg-transparent text-dark">
@@ -140,7 +140,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-       
+       </div>
       </div>
     </>
   );
