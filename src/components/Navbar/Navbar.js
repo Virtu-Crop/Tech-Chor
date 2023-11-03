@@ -60,6 +60,11 @@ const Navbar = () => {
         >
           <FontAwesomeIcon className="contact-icon" icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+
+        <Link to="/Signup" className="button-1">
+            {" "}
+            Register
+          </Link>
       </nav>
 
       
