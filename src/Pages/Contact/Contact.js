@@ -1,10 +1,11 @@
 import React from "react";
 import "./Contact.scss";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navigation";
 import { Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import GLOBE from "vanta/src/vanta.globe";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../../components/Footer/Footer";
 const Contact = () => {
   const vantaRef = useRef(null);
   useEffect(() => {
@@ -36,7 +37,7 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="contact" ref={vantaRef}>
         <h1>
           <b
@@ -65,8 +66,7 @@ const Contact = () => {
           where passion meets innovation!
         </p>
         <div className="but" style={{ paddingTop: "20px" }}>
-          {/* <Button variant="outline-success">Sign IN</Button>{" "}
-              <Button variant="outline-success">Sign UP</Button>{" "} */}
+          
           <Link to="/login" className="butt">
             {" "}
             Login In
@@ -76,6 +76,7 @@ const Contact = () => {
             Sign Up
           </Link>
         </div>
+    
       </div>
     </>
   );

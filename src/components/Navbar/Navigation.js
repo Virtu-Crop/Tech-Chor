@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import './Navbar.scss'
+import './Navigation.scss'
 import { Link, NavLink } from "react-router-dom";
 import LogoS from "./../images/logo1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 
-const Navbar = () => {
+const Navigation = () => {
 
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);//it will provide the height of window on which it is displaying the content
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);//it will provide the width of window on which it is displaying the content
@@ -61,10 +61,7 @@ const Navbar = () => {
           <FontAwesomeIcon className="contact-icon" icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
-        <Link to="/Signup" className="button-1">
-            {" "}
-            Register
-          </Link>
+        <Link className="button-1">Register</Link>
       </nav>
 
       
@@ -72,4 +69,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navigation;

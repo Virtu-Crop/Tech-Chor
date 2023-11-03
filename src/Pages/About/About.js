@@ -1,7 +1,9 @@
 import React, { useRef,useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
+import Navbar from '../../components/Navbar/Navigation';
 import Dots from 'vanta/src/vanta.dots';
-import './About.scss'
+import './About.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../../components/Footer/Footer';
 const About = () => {
   const vantaRef = useRef(null);
   useEffect(() => {
@@ -28,7 +30,7 @@ const About = () => {
   return (
     <>
     
-    <Navbar/>
+    {/* <Navbar/> */}
     <div ref={vantaRef}>
     <div style={{paddingTop:'30px'}}  >
      <h1 style={{textAlign:'center', paddingTop:'90px', fontSize:'70px', color:'#afff00'}}><b>Who we are</b></h1>
@@ -38,8 +40,7 @@ const About = () => {
      Here, you will find mentors, peers, and friends who share your enthusiasm and drive to learn and create.
      </p>
     </div>
-    
-    </div> 
+    </div>
     </>
   )
 }

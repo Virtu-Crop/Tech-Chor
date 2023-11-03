@@ -30,7 +30,7 @@ const Signup = () => {
       return (
         
         <div className="signup-form">
-          <h2>Sign Up</h2>
+          <h2>Register</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <input
@@ -102,7 +102,7 @@ const Signup = () => {
                 required
               />
             </div>
-            <button type="submit">Sign Up</button>
+            <button type="submit">Register</button>
             <p>Already have an account ?<Link to='/login'>Login</Link></p>
           </form>
         </div>

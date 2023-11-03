@@ -1,9 +1,6 @@
 .nav-bar {
     background-color:#1a1a1a; 
-    border-radius: 10cap;
-    margin-top: 1%;
-    margin-left: 6cap;
-    width: 90%;
+    width: 100%;
     height: 60px;
     display: flex;
     z-index: 3;
@@ -55,8 +52,8 @@
             font-family: 'Poppins',sans-serif;
             text-decoration: none;
             padding: 10px 18px;
-            border: 1px solid #afff00;
-            border-radius: 5cap;
+            border: 0.1px solid #afff00;
+            // border-radius: 5cap;
             margin-top: 1px;
             margin: 8px;
             float: left;

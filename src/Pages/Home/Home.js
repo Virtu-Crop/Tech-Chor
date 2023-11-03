@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navigation";
 import NET from "vanta/src/vanta.net";
-import Footer from "../../components/Footer/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import "./Home.scss";
+import Footer from "../../components/Footer/Footer";
 const Home = () => {
   const vantaRef = useRef(null);
 
@@ -13,7 +14,8 @@ const Home = () => {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight:800.00,
+      minHeight: 800.0,
+      minWidth: 100.0,
       top: 100.0,
       paddingTop: -100.0,
       scale: 1.0,
@@ -22,12 +24,10 @@ const Home = () => {
       backgroundColor: 0x00000,
       points: 8.0,
       maxDistance: 16.0,
-      spacing: 11.0,
+      spacing: 14.0,
       paddingLeft: 50.0,
       size: 2,
       showDots: false,
-     
-  
     });
 
     return () => {
@@ -38,7 +38,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="home-page" ref={vantaRef}>
         <div
           className="child"
@@ -76,8 +76,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import './Login.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 const Login = () => {

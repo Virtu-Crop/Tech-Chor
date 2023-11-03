@@ -4,23 +4,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./Pages/Services/Services";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-import { useEffect, useState } from "react";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Signup/Signup";
+import Navigation from "./components/Navbar/Navigation";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate a delay for loading content
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
   return (
     <>
       <Router>
+        <Navigation/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/services" element={<Services />}></Route>
@@ -29,8 +25,10 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
         </Routes>
+        <Footer/>
       </Router>
     </>
+
   );
 }
 
