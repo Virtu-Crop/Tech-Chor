@@ -22,12 +22,11 @@ const Home = () => {
       scaleMobile: 1.0,
       color: 0xafff00,
       backgroundColor: 0x00000,
-      points: 8.0,
-      maxDistance: 16.0,
-      spacing: 14.0,
-      paddingLeft: 50.0,
-      size: 2,
-      showDots: false,
+      points: 6.0,
+      maxDistance: 18.0,
+      spacing: 12.0,
+      
+      showDots: true,
     });
 
     return () => {

@@ -15,26 +15,26 @@
       padding: 0;
       // border: 2px solid red;
     }
-    .child1{
-      z-index: -1;
-      height: 100%;
-      right: -26%;
+    // .child1{
+    //   z-index: -1;
+    //   height: 100%;
+    //   margin-left: 25%;
       
-    }
+    // }
     
   }
 
   .button{
+    left: 0%;
     color: #afff00;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     letter-spacing: 4px;
     font-family: 'Poppins',sans-serif;
     text-decoration: none;
     padding: 10px 18px;
     border: 1px solid #afff00;
     margin-top: 1px;
-    margin: 8px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
