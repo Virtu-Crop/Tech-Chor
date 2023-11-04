@@ -13,6 +13,7 @@
 
   .butt {
     color: #afff00;
+    display: flex;
     font-size: 20px;
     font-weight: 800;
     border-radius: 0px;
@@ -21,7 +22,7 @@
     text-decoration: none;
     padding: 10px 18px;
     border: 1px solid #afff00;
-    margin-top: 1px;
+    //margin-top: 1px;
     margin: 8px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;

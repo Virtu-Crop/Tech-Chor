@@ -8,19 +8,19 @@
     
   
     .child{
-      width: 40%;
+      width: 43%;
       height: 100%;
       float: left;
       margin: 0;
       padding: 0;
-      // border: 2px solid red;
+      //border: 2px solid red;
     }
-    // .child1{
-    //   z-index: -1;
-    //   height: 100%;
-    //   margin-left: 25%;
-      
-    // }
+    .child1{
+      z-index: -1;
+      height: 1000%;
+      margin-left: 50%;
+      border: 2px solid red;
+      }
     
   }
 

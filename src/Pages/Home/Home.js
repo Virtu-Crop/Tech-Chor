@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar/Navigation";
-import NET from "vanta/src/vanta.net";
+import halo from "vanta/src/vanta.halo";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import "./Home.scss";
@@ -9,24 +9,19 @@ const Home = () => {
   const vantaRef = useRef(null);
 
   useEffect(() => {
-    const vantaEffect = NET({
+    const vantaEffect = halo({
       el: vantaRef.current,
-      mouseControls: true,
-      touchControls: true,
+      mouseControls: false,
+      touchControls:false,
       gyroControls: false,
-      minHeight: 800.0,
-      minWidth: 100.0,
-      top: 100.0,
-      paddingTop: -100.0,
-      scale: 1.0,
-      scaleMobile: 1.0,
-      color: 0xafff00,
-      backgroundColor: 0x00000,
-      points: 6.0,
-      maxDistance: 18.0,
-      spacing: 12.0,
-      
-      showDots: true,
+      minHeight: 1000.00,
+      minWidth: 200.00,
+      baseColor: 0xdff61,
+      backgroundColor: 0x0,
+      amplitudeFactor: 5.00,
+      xOffset: 0.21,
+      yOffset: 0.1,
+      size: 0.8
     });
 
     return () => {
@@ -49,15 +44,16 @@ const Home = () => {
             </b>
             <br />
             <br />
-            <b style={{ textAlign: "left", fontSize: "40px" }}>
+            <b style={{ textAlign: "left", fontSize: "35px" }}>
               Empowering Student Innovators!
             </b>
           </h1>
           <p
             style={{
               fontSize: "20px",
+              
               paddingLeft: "0px",
-              paddingTop: "20px",
+              paddingTop: "15px",
               color: "white",
             }}
           >
