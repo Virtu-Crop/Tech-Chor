@@ -18,23 +18,32 @@
     
     .nav-links {
     display: flex;
-    gap: 30px;
+    // gap: 30px;
     align-items: center;
     margin: 10px;
     
     .home-icon{
+      padding: 15px;
+      padding-top: 20px;
       &:hover{
         color: #afff00;
       }}
       .services-icon{
+        padding: 15px;
+        padding-top: 20px;
         &:hover{
           color: #afff00;
         }}
         .about-icon{
+          padding: 15px;
+          padding-top: 20px;
           &:hover{
             color: #afff00;
           }}
           .contact-icon{
+            padding: 15px;
+            padding-top: 20px;
+            padding-right: 30px;
             &:hover{
               color: #afff00;
             }}
@@ -46,24 +55,28 @@
           }
 
           .button-1{
+            padding: 10px;
             color: #afff00;
             font-size: 13px;
             font-weight: 600;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             font-family: 'Poppins',sans-serif;
             text-decoration: none;
-            padding: 10px 18px;
-            border: 0.1px solid #afff00;
+            padding: 0px;
+            margin: 0px;
+            
+            // padding: 10px 18px;
+            // border: 0.1px solid #afff00;
             // border-radius: 5cap;
-            margin-top: 1px;
-            margin: 8px;
-            float: left;
-            animation: fadeIn 1s 1.8s backwards;
-            white-space: nowrap;
-            &:hover {
-              background: #afff00;
-              color: #000000;
-            }
+            // margin-top: 1px;
+            // margin: 8px;
+            // float: left;
+            // animation: fadeIn 1s 1.8s backwards;
+            // white-space: nowrap;
+            // &:hover {
+            //   background: #afff00;
+            //   color: #000000;
+            // }
           }
     }}
     .auth-links {

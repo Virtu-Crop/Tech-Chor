@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.scss";
+import { Link, NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LogoS from "./../images/logo1.png";
 const Footer = () => {
   return (
     // <FooterContainer className="main-footer">
@@ -47,38 +49,66 @@ const Footer = () => {
     <div className="main-footer">
     <div className="container">
       <div className="row">
+
         {/* Column1 */}
         <div className="col">
-          <h4>THICC MEMES INC</h4>
-          <h1 className="list-unstyled">
-            <li>342-420-6969</li>
-            <li>Moscow, Russia</li>
-            <li>123 Streeet South North</li>
+          
+         
+        <img className="logo" src={LogoS} alt="" style={{width:'250px', padding:'0px', margin:'0px'}}/>
+        <hr />
+          <h1 className="list-unstyled" style={{paddingLeft:'15px', fontSize:'18px'}}>
+            <li>320, Gera's Imperium Rise,</li>
+            <li>Hinjawadi Phase II, Pimpri-Chinchwad,</li>
+            <li>Maharashtra 411057</li>
           </h1>
+          <br></br>
+          <h1 style={{paddingLeft:'15px', fontSize:'20px'}}>Email : hello@techchor.com</h1>
+          
         </div>
         {/* Column2 */}
-        <div className="col">
-          <h4>Stuff</h4>
-          <ui className="list-unstyled">
-            <li>DANK MEMES</li>
-            <li>OTHER STUFF</li>
-            <li>GUD STUFF</li>
+        <div className="col" style={{paddingTop:'25px', paddingLeft:'100px'}}>
+          <h4 style={{fontSize:'30px', paddingBottom:'18px', fontWeight:'bold'}}>Useful Links</h4>
+          <hr />
+          <ui className="list-unstyled" >
+          <Link to="/" style={{textDecoration:'none', fontSize:'18px', color:'#fff'}}>
+          <li>Home</li>
+          </Link>
+
+          <Link to="/services"  style={{textDecoration:'none', fontSize:'18px', color:'#fff'}}>
+          <li>Our Services</li>
+          </Link>
+
+          <Link to="/about"  style={{textDecoration:'none', fontSize:'18px', color:'#fff'}}>
+          <li>About Us</li>
+          </Link>
+
+          <Link to="/contact"  style={{textDecoration:'none', fontSize:'18px', color:'#fff'}}>
+          <li>Contact Us</li>
+          </Link>
+
           </ui>
         </div>
         {/* Column3 */}
-        <div className="col">
-          <h4>WELL ANOTHER COLUMN</h4>
+        <div className="col" style={{paddingTop:'25px', paddingLeft:'100px'}}>
+          <h4 style={{fontSize:'30px', paddingBottom:'18px', fontWeight:'bold'}}>Our Products</h4>
+          <hr />
           <ui className="list-unstyled">
-            <li>DANK MEMES</li>
-            <li>OTHER STUFF</li>
-            <li>GUD STUFF</li>
+
+          <Link to="" style={{textDecoration:'none', fontSize:'18px', color:'#fff'}}>
+          <li>CoinXHub</li>
+          </Link>
+
+          <Link to="" style={{textDecoration:'none', fontSize:'18px', color:'#fff'}}>
+          <li>EvolveAir</li>
+          </Link>
+
           </ui>
         </div>
       </div>
       <hr />
       <div className="row">
         <p className="col-sm">
-          &copy;{new Date().getFullYear()} THICC MEMES | All rights reserved |
+          &copy;{new Date().getFullYear()} VIRTUCROP PVT. LTD. | All rights reserved |
           Terms Of Service | Privacy
         </p>
       </div>

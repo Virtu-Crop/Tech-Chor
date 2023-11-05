@@ -60,8 +60,10 @@ const Navigation = () => {
         >
           <FontAwesomeIcon className="contact-icon" icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-
-        <Link to={'/signup'} className="button-1">Register</Link>
+        <Link to={'/login'} className="button-1">Login</Link>
+        <h1 style={{color:'#afff00', padding:'10px', margin:'0px'}}>|</h1>
+        <Link to={'/signup'} className="button-1">Sign Up</Link>
+        
       </nav>
 
       
