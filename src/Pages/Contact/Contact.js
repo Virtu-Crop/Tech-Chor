@@ -6,6 +6,7 @@ import { useRef, useEffect } from "react";
 import GLOBE from "vanta/src/vanta.globe";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../components/Footer/Footer";
+import Navigation from "../../components/Navbar/Navigation";
 const Contact = () => {
   const vantaRef = useRef(null);
   useEffect(() => {
@@ -37,7 +38,7 @@ const Contact = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navigation />
       <div className="contact" ref={vantaRef}>
         <h1>
           <b
@@ -76,9 +77,9 @@ const Contact = () => {
             {" "}
             Sign Up
           </Link>
-        </div>
-    
+        </div>  
       </div>
+      <Footer/>
     </>
   );
 };

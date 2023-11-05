@@ -4,6 +4,7 @@ import Dots from 'vanta/src/vanta.dots';
 import './About.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../../components/Footer/Footer';
+import Navigation from '../../components/Navbar/Navigation';
 const About = () => {
   const vantaRef = useRef(null);
   useEffect(() => {
@@ -30,7 +31,7 @@ const About = () => {
   return (
     <>
     
-    {/* <Navbar/> */}
+    <Navigation/>
     <div ref={vantaRef}>
     <div style={{paddingTop:'30px'}}  >
      <h1 style={{textAlign:'Left', paddingTop:'80px', fontSize:'70px', color:'#afff00', paddingLeft:'30px'}}><b>Who we are </b></h1>
@@ -63,6 +64,7 @@ const About = () => {
      </p>
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

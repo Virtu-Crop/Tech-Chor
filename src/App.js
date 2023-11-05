@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation/>
+        {/* <Navigation/> */}
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/services" element={<Services />}></Route>
@@ -25,7 +25,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </Router>
     </>
 

@@ -4,6 +4,7 @@ import Dots from 'vanta/src/vanta.dots';
 import './Services.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../../components/Footer/Footer";
+import Navigation from "../../components/Navbar/Navigation";
 const Services = () => {
   const vantaRef =useRef(null);
   useEffect(()=>{
@@ -25,7 +26,7 @@ const Services = () => {
       };},[])
   return (
     <>
-      {/* <Navbar /> */}
+      <Navigation/>
       <div className="services-page" ref={vantaRef}  >
         <h1 >
           <b>What We Offer</b>
@@ -131,6 +132,7 @@ const Services = () => {
         </div>
        </div>
       </div>
+      <Footer/>
     </>
   );
 };

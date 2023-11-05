@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "../../components/Navbar/Navigation";
 import halo from "vanta/src/vanta.halo";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import "./Home.scss";
 import Footer from "../../components/Footer/Footer";
+import Navigation from "../../components/Navbar/Navigation";
 const Home = () => {
   const vantaRef = useRef(null);
 
@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navigation />
       <div className="home-page" ref={vantaRef}>
         <div
           className="child"
@@ -71,6 +71,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

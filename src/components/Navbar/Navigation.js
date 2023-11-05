@@ -61,7 +61,7 @@ const Navigation = () => {
           <FontAwesomeIcon className="contact-icon" icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
-        <Link className="button-1">Register</Link>
+        <Link to={'/signup'} className="button-1">Register</Link>
       </nav>
 
       
